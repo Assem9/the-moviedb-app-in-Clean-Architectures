@@ -36,7 +36,10 @@ class NowPlayingWidget extends StatelessWidget {
                       return GestureDetector(
                         key: const Key('openMovieMinimalDetail'),
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (_)=>MovieDetailScreen(id: item.id)));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (_)=> MovieDetailScreen(id: item.id))
+                          );
                         },
                         child: Stack(
                           children: [
